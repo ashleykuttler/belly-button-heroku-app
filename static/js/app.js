@@ -52,8 +52,8 @@ function buildCharts(sample) {
     // HINT: You will need to use slice() to grab the top 10 sample_values,
     // otu_ids, and labels (10 each).
     var data = [{
-      values: data.sample_values.slice(0, 10),
-      labels: data.otu_ids.sort(function (a,b){return b-a}).slice(0, 10),
+      values: data.sample_values.sort(function (a,b){return b-a}).slice(0, 10),
+      labels: data.otu_ids.slice(0, 10),
       hovertext: data.otu_labels.slice(0, 10),
       type: 'pie',
     }];
